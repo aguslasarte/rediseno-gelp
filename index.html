@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasia y Esgrima La Plata — Rediseño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ================= NAVBAR (glass sobre el hero / sólida al scrollear) ================= -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__links nav__links--left">
+        <li><a href="#socios">Socios</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#sedes">Sedes</a></li>
+        <li><a href="#acreditaciones">Acreditaciones</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+
+      <a class="nav__logo" href="#inicio" aria-label="Gimnasia y Esgrima La Plata">
+        <img class="nav__logo-img nav__logo-img--glass" src="assets/logo-gimnasia-positivo.png" alt="">
+        <img class="nav__logo-img nav__logo-img--solid" src="assets/logo-gimnasia.png" alt="">
+      </a>
+
+      <ul class="nav__links nav__links--right">
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#futbol">Fútbol</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#deportes">Deportes</a></li>
+        <li><a href="#loboshop">Loboshop</a></li>
+      </ul>
+
+      <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <a class="autogestion" href="#autogestion">Autogestión</a>
+
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#socios">Socios</a><a href="#beneficios">Beneficios</a><a href="#sedes">Sedes</a>
+      <a href="#acreditaciones">Acreditaciones</a><a href="#contactos">Contactos</a>
+      <a href="#noticias">Noticias</a><a href="#futbol">Fútbol</a><a href="#agenda">Agenda</a>
+      <a href="#deportes">Deportes</a><a href="#loboshop">Loboshop</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" id="heroBg">
+        <img src="assets/hero-bg.png" alt="Mateo Seoane firmando la renovación de su contrato">
+      </div>
+      <div class="hero__gradient"></div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="tag tag--lg">Fútbol Profesional</span>
+          <div class="hero__copy">
+            <h1>Mateo Seoane renovó su vínculo con Gimnasia</h1>
+            <p>El mediocampista extendió su contrato hasta diciembre de 2028. Además, el Club adquirió el 70% de su ficha como futbolista.</p>
+          </div>
+          <a class="link-more" href="#noticias">ver más <span aria-hidden="true">→</span></a>
+        </div>
+
+        <article class="match" aria-label="Próximo partido">
+          <div class="match__body">
+            <div class="match__shields">
+              <img src="assets/escudo-gimnasia.svg" alt="Gimnasia" width="89" height="131">
+              <span class="match__x">x</span>
+              <img src="assets/escudo-tucuman.svg" alt="Atlético Tucumán" width="86" height="131">
+            </div>
+            <div class="match__info">
+              <p class="match__title"><strong>Gimnasia </strong><span>vs ATL. Tucumán</span></p>
+              <div class="match__meta">
+                <div><span>LPF Clausura</span><span>Fecha 12</span></div>
+                <div class="match__meta-right"><span>9/10</span><span>18:00 hs</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= ÚLTIMAS NOTICIAS ================= -->
+    <section class="section news" id="noticias">
+      <div class="container">
+        <h2 class="section__title reveal">Últimas noticias</h2>
+
+        <div class="news-grid">
+          <article class="news-card reveal" style="--d:0s">
+            <div class="news-card__media"><img src="assets/news-basquet.png" alt="" style="object-position:center 21%"></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Básquet</span>
+              <h3>Anderson García se suma al Lobo</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+          <article class="news-card reveal" style="--d:.1s">
+            <div class="news-card__media"><img src="assets/news-futsal.png" alt="" style="object-position:center 31%"></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Futsal</span>
+              <h3>Igualdad ante Banfield por el postergado</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+          <article class="news-card reveal" style="--d:.2s">
+            <div class="news-card__media"><img src="assets/news-voley.png" alt="" style="object-position:center 36%"></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Voley</span>
+              <h3>¡Las Lobas triunfaron en Castelar!</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="news-grid news-grid--alt">
+          <article class="news-card reveal" style="--d:0s">
+            <div class="news-card__media"><img src="assets/news-futfem.png" alt="" style="--zoom:1.9;object-position:40% 10%;transform-origin:40% 10%"></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Futbol Femenino</span>
+              <h3>¡De local por los tres puntos!</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+          <article class="news-card reveal" style="--d:.1s">
+            <div class="news-card__media"><img src="assets/news-voleyfem.png" alt=""></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Voley Femenino</span>
+              <h3>¡Las Lobas vuelven al Poli!</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+          <article class="news-card reveal" style="--d:.2s">
+            <div class="news-card__media"><img src="assets/news-octubre.png" alt="" style="--zoom:1.28;object-position:59% 62%;transform-origin:59% 62%"></div>
+            <div class="news-card__body">
+              <span class="tag tag--sm">Institucionales</span>
+              <h3>Octubre Rosa: una agenda para concientizar y acercar salud a la comunidad</h3>
+              <div class="news-card__footer"><a class="news-card__more" href="#">Leer Más</a><time>1/10/2026</time></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BANDA: APP ================= -->
+    <section class="band" aria-label="Descargá la app">
+      <div class="band__img"><img src="assets/band-hinchada.png" alt=""></div>
+      <div class="band__inner reveal">
+        <h2 class="band__title">Lleva al Lobo en tu celular</h2>
+        <a class="btn" href="#">Descargá la app</a>
+      </div>
+    </section>
+
+    <!-- ================= LOBOSHOP ================= -->
+    <section class="section shop" id="loboshop">
+      <div class="container">
+        <div class="shop__head reveal">
+          <h2 class="section__title">Loboshop</h2>
+          <p class="shop__sub">Coleccion 2026</p>
+          <img class="shop__brand" src="assets/givova.svg" alt="Givova" width="223.453" height="36">
+        </div>
+
+        <div class="shop__grid">
+          <a class="tile tile--juego reveal" href="#" style="--d:0s">
+            <img src="assets/shop-juego.png" alt="">
+            <span class="tile__shade"></span>
+            <span class="tile__label tile__label--xl">Juego</span>
+          </a>
+          <a class="tile tile--entrenamiento reveal" href="#" style="--d:.1s">
+            <img src="assets/shop-entrenamiento.png" alt="">
+            <span class="tile__shade tile__shade--soft"></span>
+            <span class="tile__label">Entrenamiento</span>
+          </a>
+          <a class="tile tile--lifestyle reveal" href="#" style="--d:.2s">
+            <span class="tile__split tile__split--l"><img src="assets/shop-lifestyle-2.png" alt=""></span>
+            <span class="tile__split tile__split--r"><img src="assets/shop-lifestyle-1.png" alt=""></span>
+            <span class="tile__shade tile__shade--soft"></span>
+            <span class="tile__label">Life Style</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BANDA: ESCOLTA ================= -->
+    <section class="band" aria-label="Niño o niña escolta">
+      <div class="band__img"><img src="assets/band-escolta.png" alt=""></div>
+      <div class="band__inner reveal">
+        <h2 class="band__title">¿Querés ser niño o niña escolta?</h2>
+        <a class="btn btn--alt" href="#">Anotate</a>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section class="section ben" id="beneficios">
+      <div class="container">
+        <div class="ben__head reveal">
+          <h2 class="section__title">Beneficios para socios</h2>
+          <div class="ben__brand" aria-label="Bonda"><img src="assets/bonda.svg" alt="Bonda" width="220" height="51.8617"></div>
+        </div>
+
+        <div class="ben__row">
+          <article class="ben-card reveal" data-tilt style="--d:0s">
+            <div class="ben-card__bg"><img src="assets/ben-ypf-bg.png" alt="" style="--zoom:1.2;object-position:73% 33%;transform-origin:73% 33%"></div>
+            <div class="ben-card__panel"></div>
+            <div class="ben-card__logo ben-card__logo--ypf"><img src="assets/ben-ypf-logo.png" alt="YPF"></div>
+            <span class="ben-card__brand">YPF</span>
+            <div class="ben-card__info"><span class="ben-card__value">10%</span><span class="ben-card__desc">Descuento en nafta INFINIA</span></div>
+          </article>
+
+          <article class="ben-card reveal" data-tilt style="--d:.08s">
+            <div class="ben-card__bg"><img src="assets/ben-despegar-bg.png" alt="" style="--zoom:1.12;object-position:52% 72%;transform-origin:52% 72%"></div>
+            <div class="ben-card__panel"></div>
+            <div class="ben-card__logo ben-card__logo--despegar"><img src="assets/ben-despegar-logo.png" alt="Despegar"></div>
+            <span class="ben-card__brand">DESPEGAR</span>
+            <div class="ben-card__info"><span class="ben-card__value">PROMO</span><span class="ben-card__desc">Bono de bienvenida de 1.500 puntos Pasaporte Despegar</span></div>
+          </article>
+
+          <article class="ben-card reveal" data-tilt style="--d:.16s">
+            <div class="ben-card__bg"><img src="assets/ben-ena-bg.png" alt="" style="object-position:57% 50%"></div>
+            <div class="ben-card__panel"></div>
+            <div class="ben-card__logo ben-card__logo--ena"><img src="assets/ena-logo.svg" alt="ENA" width="138" height="138"></div>
+            <span class="ben-card__brand">YPF</span>
+            <div class="ben-card__info"><span class="ben-card__value">20%</span><span class="ben-card__desc">Descuento en la tienda</span></div>
+          </article>
+
+          <article class="ben-card reveal" data-tilt style="--d:.24s">
+            <div class="ben-card__bg"><img src="assets/ben-loboshop-bg.png" alt="" style="--zoom:1.48;object-position:51% 29%;transform-origin:51% 29%"></div>
+            <div class="ben-card__panel"></div>
+            <div class="ben-card__logo ben-card__logo--shop"><img src="assets/loboshop-logo.svg" alt="Loboshop" width="121" height="138"></div>
+            <span class="ben-card__brand">LOBOSHOP</span>
+            <div class="ben-card__info"><span class="ben-card__value">15%</span><span class="ben-card__desc">Descuento en cualquier compra en el LOBOSHOP</span></div>
+          </article>
+
+          <a class="ben-card ben-card--more reveal" href="#" style="--d:.32s">
+            <span class="ben-card__more-text">Ver<br>Más</span>
+            <span class="ben-card__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BANDA: SOCIOS ================= -->
+    <section class="band" id="socios" aria-label="Asociate">
+      <div class="band__img"><img src="assets/band-hinchada.png" alt=""></div>
+      <div class="band__inner reveal">
+        <h2 class="band__title">¿No sos socio/a?</h2>
+        <a class="btn" href="#">Asociate acá</a>
+      </div>
+    </section>
+
+    <!-- ================= GALERÍA ================= -->
+    <section class="section gal" id="galeria">
+      <div class="container">
+        <div class="gal__title-box reveal"><h2 class="section__title">Galería</h2></div>
+
+        <div class="gal__grid">
+          <figure class="gal-item gal-item--1 reveal" style="--d:0s" tabindex="0">
+            <img src="assets/gal-1.png" alt="La visita a Independiente Rivadavia" style="object-position:21% 50%">
+            <figcaption class="gal-item__cap"><strong>La visita a Independiente Rivadavia, en Fotos</strong><span>Estadio Bautista Gargantini, 4/10/2026</span></figcaption>
+          </figure>
+          <figure class="gal-item gal-item--2 reveal" style="--d:.1s" tabindex="0">
+            <img src="assets/gal-2.png" alt="Juveniles frente al Guapo" style="object-position:50% 70%">
+            <figcaption class="gal-item__cap"><strong>Juveniles positivo frente al Guapo</strong><span>Estancia Chica 1/10/2026</span></figcaption>
+          </figure>
+          <figure class="gal-item gal-item--3 reveal" style="--d:.2s" tabindex="0">
+            <img src="assets/gal-3.png" alt="Las Lobas volvieron a la victoria" style="object-position:41% 50%">
+            <figcaption class="gal-item__cap"><strong>Las Lobas volvieron a la victoria</strong><span>Polideportivo Nestor Nethol, 2/10/2026</span></figcaption>
+          </figure>
+          <figure class="gal-item gal-item--4 reveal" style="--d:.3s" tabindex="0">
+            <img src="assets/gal-4.png" alt="Las Guerreras consiguieron un nuevo triunfo" style="object-position:50% 22%">
+            <figcaption class="gal-item__cap"><strong>Las Guerreras consiguieron un nuevo triunfo</strong><span>2/10/2026</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox de la galería -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería de fotos">
+    <button class="lightbox__close" id="lbClose" aria-label="Cerrar">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <figure class="lightbox__fig">
+      <img id="lbImg" src="" alt="">
+      <figcaption><strong id="lbTitle"></strong><span id="lbSub"></span></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
